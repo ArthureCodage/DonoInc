@@ -3,21 +3,21 @@ import { Service } from '../types/service';
 
 export const servicesData: Service[] = [
   {
-    name: 'DonoCloud',
-    description: 'Solution de stockage cloud sécurisée avec synchronisation multi-appareils et partage collaboratif.',
+    name: 'UptimeDono',
+    description: 'Service de monitoring et surveillance de la disponibilité de vos sites web et services.',
     status: 'online',
-    url: 'https://cloud.donoinc.com',
+    url: 'https://uptime-dono.onrender.com/status/main',
     icon: Cloud,
-    tags: ['Stockage', 'Collaboration', 'Sécurité'],
+    tags: ['Monitoring', 'Uptime', 'Surveillance'],
     lastUpdate: '2 min'
   },
   {
-    name: 'DonoAnalytics',
-    description: 'Plateforme d\'analyse web avancée avec tableaux de bord en temps réel et insights détaillés.',
+    name: 'DonoCard',
+    description: 'Générateur de cartes de visite numériques personnalisées avec design moderne et responsive.',
     status: 'online',
-    url: 'https://analytics.donoinc.com',
+    url: 'https://arthurecodage.github.io/DonoCard/',
     icon: BarChart3,
-    tags: ['Analytics', 'Dashboard', 'Reporting'],
+    tags: ['Cartes', 'Design', 'Digital'],
     lastUpdate: '5 min'
   },
   {

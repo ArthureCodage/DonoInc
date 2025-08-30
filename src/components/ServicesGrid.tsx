@@ -2,7 +2,11 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 import { servicesData } from '../data/services';
 
-const ServicesGrid = () => {
+interface ServicesGridProps {
+  onRestrictedAccess: () => void;
+}
+
+const ServicesGrid: React.FC<ServicesGridProps> = ({ onRestrictedAccess }) => {
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
       <div className="max-w-7xl mx-auto">
@@ -17,7 +21,7 @@ const ServicesGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+            <ServiceCard key={index} service={service} onRestrictedAccess={onRestrictedAccess} />
           ))}
         </div>
       </div>

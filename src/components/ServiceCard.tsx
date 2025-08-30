@@ -4,9 +4,10 @@ import { Service } from '../types/service';
 
 interface ServiceCardProps {
   service: Service;
+  onRestrictedAccess: () => void;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ service, onRestrictedAccess }) => {
   const statusColors = {
     online: 'text-green-400',
     maintenance: 'text-yellow-400',
@@ -17,6 +18,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
     online: 'bg-green-400/10',
     maintenance: 'bg-yellow-400/10',
     offline: 'bg-red-400/10'
+  };
+
+  const handleVisit = () => {
+    // Services avec des liens réels
+    const realServices = ['UptimeDono', 'DonoCard'];
+    
+    if (realServices.includes(service.name)) {
+      window.open(service.url, '_blank', 'noopener,noreferrer');
+    } else {
+      onRestrictedAccess();
+    }
   };
 
   return (
@@ -57,15 +69,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         <div className="text-sm text-slate-500">
           Dernière mise à jour: {service.lastUpdate}
         </div>
-        <a
-          href={service.url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={handleVisit}
           className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-all duration-200 transform hover:scale-105"
         >
           <span>Visiter</span>
           <ExternalLink className="w-4 h-4" />
-        </a>
+        </button>
       </div>
     </div>
   );
