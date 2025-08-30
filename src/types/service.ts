@@ -1,4 +1,4 @@
-import { LucideIcon } from 'lucide-react';
+import { DivideIcon as LucideIcon } from 'lucide-react';
 
 export interface Service {
   name: string;
