@@ -6,7 +6,7 @@ export const servicesData: Service[] = [
     name: 'UptimeDono',
     description: 'Service de monitoring et surveillance de la disponibilité de vos sites web et services.',
     status: 'online',
-    url: 'https://uptime-dono.onrender.com/status/main',
+    url: 'http://uptime.donohosting.com/status/main',
     icon: Cloud,
     tags: ['Monitoring', 'Uptime', 'Surveillance'],
     lastUpdate: '2 min'
