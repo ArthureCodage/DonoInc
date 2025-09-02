@@ -5,7 +5,7 @@ export const servicesData: Service[] = [
   {
     name: 'UptimeDono',
     description: 'Service de monitoring et surveillance de la disponibilité de vos sites web et services.',
-    status: 'online',
+    status: 'ONLINE',
     url: 'http://uptime.donohosting.com/status/main',
     icon: Cloud,
     tags: ['Monitoring', 'Uptime', 'Surveillance'],
@@ -14,17 +14,17 @@ export const servicesData: Service[] = [
   {
     name: 'DonoCard',
     description: 'Générateur de cartes de visite numériques personnalisées avec design moderne et responsive.',
-    status: 'online',
+    status: 'ONLINE',
     url: 'https://arthurecodage.github.io/DonoCard/',
     icon: BarChart3,
     tags: ['Cartes', 'Design', 'Digital'],
     lastUpdate: '5 min'
   },
   {
-    name: 'DonoSecure',
-    description: 'Service de monitoring de sécurité et protection contre les menaces pour vos applications web.',
-    status: 'online',
-    url: 'https://secure.donoinc.com',
+    name: 'DonoJack',
+    description: 'Jeu de BlackJack',
+    status: 'maintenance',
+    url: 'https://arthurecodage.github.io/DonoJack/',
     icon: Shield,
     tags: ['Sécurité', 'Monitoring', 'Protection'],
     lastUpdate: '1 min'
@@ -32,7 +32,7 @@ export const servicesData: Service[] = [
   {
     name: 'DonoAPI',
     description: 'API RESTful robuste pour l\'intégration de services tiers avec documentation complète.',
-    status: 'maintenance',
+    status: 'OFFLINE',
     url: 'https://api.donoinc.com',
     icon: Database,
     tags: ['API', 'Intégration', 'REST'],
@@ -41,7 +41,7 @@ export const servicesData: Service[] = [
   {
     name: 'DonoDocs',
     description: 'Plateforme de documentation collaborative avec versioning et recherche avancée.',
-    status: 'online',
+    status: 'OFFLINE',
     url: 'https://docs.donoinc.com',
     icon: FileText,
     tags: ['Documentation', 'Collaboration', 'Wiki'],
@@ -50,7 +50,7 @@ export const servicesData: Service[] = [
   {
     name: 'DonoChat',
     description: 'Solution de messagerie instantanée intégrée avec support multimédia et chiffrement.',
-    status: 'online',
+    status: 'OFFLINE',
     url: 'https://chat.donoinc.com',
     icon: MessageSquare,
     tags: ['Chat', 'Temps réel', 'Messagerie'],
@@ -59,7 +59,7 @@ export const servicesData: Service[] = [
   {
     name: 'DonoMobile',
     description: 'Application mobile companion pour gérer tous vos services DonoInc en déplacement.',
-    status: 'online',
+    status: 'OFFLINE',
     url: 'https://mobile.donoinc.com',
     icon: Smartphone,
     tags: ['Mobile', 'iOS', 'Android'],
@@ -68,7 +68,7 @@ export const servicesData: Service[] = [
   {
     name: 'DonoPortal',
     description: 'Portail principal de gestion unifié pour administrer tous vos services et abonnements.',
-    status: 'online',
+    status: 'OFFLINE',
     url: 'https://portal.donoinc.com',
     icon: Globe,
     tags: ['Portail', 'Gestion', 'Admin'],
