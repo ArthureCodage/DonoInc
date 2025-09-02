@@ -22,7 +22,7 @@ export const servicesData: Service[] = [
   },
   {
     name: 'DonoJack',
-    description: 'Jeu de BlackJack',
+    description: 'Jeu de BlackJack                                                                       ',
     status: 'maintenance',
     url: 'https://arthurecodage.github.io/DonoJack/',
     icon: Shield,
