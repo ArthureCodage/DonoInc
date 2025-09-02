@@ -5,7 +5,7 @@ export const servicesData: Service[] = [
   {
     name: 'UptimeDono',
     description: 'Service de monitoring et surveillance de la disponibilité de vos sites web et services.',
-    status: 'ONLINE',
+    status: 'online',
     url: 'http://uptime.donohosting.com/status/main',
     icon: Cloud,
     tags: ['Monitoring', 'Uptime', 'Surveillance'],
@@ -14,7 +14,7 @@ export const servicesData: Service[] = [
   {
     name: 'DonoCard',
     description: 'Générateur de cartes de visite numériques personnalisées avec design moderne et responsive.',
-    status: 'ONLINE',
+    status: 'online',
     url: 'https://arthurecodage.github.io/DonoCard/',
     icon: BarChart3,
     tags: ['Cartes', 'Design', 'Digital'],
