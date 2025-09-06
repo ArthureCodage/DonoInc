@@ -41,8 +41,8 @@ export const servicesData: Service[] = [
   {
     name: 'DonoDocs',
     description: 'Plateforme de documentation collaborative avec versioning et recherche avancée.',
-    status: 'OFFLINE',
-    url: 'https://docs.donoinc.com',
+    status: 'online',
+    url: 'https://arthurecodage.github.io/DonoDocs/',
     icon: FileText,
     tags: ['Documentation', 'Collaboration', 'Wiki'],
     lastUpdate: '10 min'
